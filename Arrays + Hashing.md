@@ -1,5 +1,24 @@
+# Dictionaries
 
-## Special Commands (python)
+Declaration and how to add elements to corresponding keys in dictionary
+
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+```
+
+- .items() → outputs everything in the dictionary *IMPORTANT*
+
+# Hashsets and Arrays
+
+- can use “in” keyword to check hashset
+- A string can be treated as a set()
+- use the .count(i) to quickly count + iterate the hashset to count each character (anagram)
+
+### Special Commands (python)
 
 .get() method: arr.get(keyname, value)
 
@@ -8,12 +27,6 @@
 .items() method: prints out the type of obj + its index + elements
 
 numset = set(nums): can straight up key value map a list to a set 
-
-# Hashsets
-
-- can use “in” keyword to check hashset
-- A string can be treated as a set()
-- use the .count(i) to quickly count + iterate the hashset to count each character (anagram)
 
 Declaration + Contains Duplicate:
 
@@ -31,35 +44,6 @@ return False
 ```
 
 using set in loops :
-
-Valid Anagram:
-
-```python
-		if len(s) != len(t):
-          return False
-        for i in set(s):
-            if s.count(i) != t.count(i):
-                return False
-        return True
-```
-
-# Dictionaries
-
-Declaration:
-
-key-value pair questions
-
-```python
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-```
-
-how to add elements to corresponding keys in dictionary
-
-- .items() → outputs everything in the dictionary *IMPORTANT*
 
 Valid Anagram:
 
@@ -156,7 +140,7 @@ def isValidSudoku(self, board: List[List[str]]) -> bool:
     - continue the in range(start: stop: step) follows same syntax (range(len(nums) - 1, -1, -1)
 - int() → converts value to an integer
 
-Encode Decode
+Encode Decode:
 
 ```jsx
 def encode(self, strs: List[str]) -> str:
@@ -177,8 +161,6 @@ def encode(self, strs: List[str]) -> str:
             i = j+ 1 + length
         return res
 ```
-
-## Arrays
 
 Product Except Self:
 
